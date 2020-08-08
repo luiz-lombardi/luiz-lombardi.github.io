@@ -5,34 +5,44 @@ body {
   font-weight: 300;
   font-family: Roboto, 'Open Sans', Arial, sans-serif;
 }
+
 section {
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
-  padding: 30px 0 20px 0;
+  padding: 30px 5 20px 0;
+  position:relative;
+  display:table;
 }
+
+
 section hr {
-  width: 30px;
+  width: 20%;
+  margin: 20px;
+  margin-left: 40%;
 }
 .cor_fundo {
   background: #f7f7f7;
 }
 /* --------  Header  -------- */
+
 header {
-  height: 90px;
-  width: 100%;
+  width:100%; 
+  display:table; 
   position: fixed;
   z-index: 10;
   background: rgb(10, 140, 226);
+  padding: 20px;
 }
+
 header #logo {
-  position: absolute;
-  top: 10px;
-  #float: left;
-  #height: 40px;
-  width: 170px;
+  position: relative;
+  float: left;
+  top: 5px;
+#  height: 50px;
   margin-left: 5%;
 }
+
 header #logo img{
   max-height: 100%;
 }
@@ -54,8 +64,6 @@ header .menu li a {
 }
 header .menu li:hover {
   background-color: #01acea;
-  border-radius: 15px;
-
 }
 /* --------  Capa  -------- */
 figure {
@@ -118,8 +126,8 @@ figure h2.titulo {
 }
 .coluna .icone {
   border-radius: 50%;
-  height: 85px;
-  width: 85px;
+  height: 95px;
+  width: 95px;
   text-align: center;
   margin: 0 auto;
 }
@@ -133,7 +141,7 @@ figure h2.titulo {
 }
 .coluna img {
   height: 300px;
-  width: 100%;
+  width: 90%;
 }
 .coluna iframe { 
   top: 0;
@@ -141,16 +149,27 @@ figure h2.titulo {
   width: 100%;
 }
 /* --------  Textos  -------- */
+
 h1 {
   text-align: center;
   font-size: 30px;
+  padding: 40px;
 }
+
 h2 {
   font-family: 'Roboto Slab', sans-serif;
   text-align: center;
-  font-weight: 400;
+  font-size: 22px;
+  padding: 15px;  
+}   
+
+h3 {
+  font-family: 'Roboto Slab', sans-serif;
+  text-align: center;
   font-size: 16px;
-}    
+  padding: 10px;  
+}   
+ 
 .esquerda {
   text-align: left;
 }
@@ -162,15 +181,17 @@ h2 {
 }
 .justificado {
   text-align: justify;
+  padding: 5px;
+  margin: 3px;
 }
 /* --------  Footer  -------- */
 footer {
-  background-color: #01acea;
+  background-color: rgb(10 140 226);
   width: 100%;
-  margin: 0 auto;
+  margin: 30px auto;
   overflow: hidden;
   padding: 30px 0 50px 0;
-  color: #fff;
+  color: #fff; 
 }
 
 .link {
@@ -187,25 +208,108 @@ footer {
   color: black;
 }
  
-footer .container {
-  padding: 30px 0 50px 0;
+
+*{text-decoration:none; list-style:none; margin:0px; padding:0px; outline:none;}
+
+nav { 
+  width:auto; 
 }
-/* --------  Responsividade  --------*/
-@media all and (max-width: 768px) {
-  .coluna, .coluna.quatro, .coluna.tres, .coluna.dois {
-    display: block;
-    width: 80%;
-    padding: 0;
-    margin: 10px auto;
-    float: none;
-  }
-  header #logo {
-    position: relative;
-    width: 100%;
-    margin-left: 0px;
-    text-align: center;
-  }
-  .menu {
-    visibility: hidden;
-  }
+nav ul { 
+  display:table; 
+  list-style: none;
+  margin-top: 15px;
+  margin-right: 5%;
+  float:right;
+}
+nav ul li {
+  float:left;
+}
+nav ul li:last-child { 
+  padding-right:0px;
+}
+nav ul li a {
+  color:#f1f1f1; 
+  font-size:18px; 
+  padding: 5px 30px; 
+  display:inline-block; 
+}
+nav ul li a:hover {
+  background-color:#002e5b; 
+  color:#f1f1f1; 
+  border-radius: 18px;
+}
+
+.toggle-menu ul {
+  display:table; 
+  width:25px;
+  margin-right: 40px;
+}
+.toggle-menu ul li {
+    width:100%; 
+    height:3px; 
+    background-color:#f1f1f1; 
+    margin-bottom:4px;
+    margin-right: 5%;
+}
+.toggle-menu ul li:last-child {
+  margin-bottom:0px;
+}
+
+input[type=checkbox], label{display:none;}
+
+.content{display:table; margin-bottom:60px; width:900px;}
+.content h2{font-size:18px; font-weight:500; color:#002e5b; border-bottom:1px solid #fde428; display:table; padding-bottom:10px; margin-bottom:10px;}
+.content p{font-size:14px; line-height:22px; color:#7c7c7c; text-align:justify;}
+
+@media only screen and (max-width: 980px) {
+
+.coluna, .coluna.dois, .coluna.tres, .coluna.quatro {
+  display: block;
+  width: 80%;
+  padding: 0;
+  margin: 10px auto;
+  float: none;
+}
+
+header #logo {
+  position: relative;
+  float: left;
+  top: 0px;
+  height: 50px;
+  margin-left: 5%;
+}
+
+.menu {
+  visibility: hidden;
+}
+     
+input[type=checkbox] {position: absolute; top: -9999px; left: -9999px; background:none;}
+input[type=checkbox]:fous{background:none;}
+label { 
+  float:right; 
+  padding:13px 0px; 
+  display:inline-block; 
+  cursor:pointer; 
+}
+input[type=checkbox]:checked ~ nav {display:block;}
+
+nav {
+  display:none; 
+  position:absolute; 
+  right:40px; 
+  top:90px; 
+  background-color:#002e5b; 
+  padding:0px; 
+  z-index:99;
+}    
+nav ul{width:auto;}
+nav ul li{float:none; padding:0px; width:100%; display:table;}
+nav ul li a{color:#FFF; font-size:15px; padding:10px 20px; display:block; border-bottom: 1px solid rgba(225,225,225,0.1);}
+nav ul li a i{color:#fde428; padding-right:13px;}
+
+nav ul li a:hover {
+  background-color:#002e5b; 
+  color:#f1f1f1; 
+}
    
+}

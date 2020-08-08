@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
 <head>
@@ -8,15 +9,29 @@
 </head>
 <body>
   <!-- MENU -->
-  <header>
-    <div id="logo"><img src="img/logo.png" alt="JA - Meu Primeiro Site"/></div>
-    <ul class="menu">
-      <li><a href="#menu1">Objetivos</a></li>
-      <li><a href="#menu2">Metas</a></li>
-      <li><a href="#menu3">Notícias</a></li>
-      <li><a href="#menu4">Sobre</a></li>
+<header>
+    <div id="logo">
+      <img src="img/logo.png" alt="JA - Meu Primeiro Site"/>
+    </div>
+
+  <label for="toggle-1" class="toggle-menu">
+    <ul>
+      <li></li> 
+      <li></li> 
+      <li></li>
     </ul>
-  </header>
+  </label>
+    <input type="checkbox" id="toggle-1">
+
+<nav>
+ <ul>
+   <li><a href="#menu1">Objetivos</a></li>
+   <li><a href="#menu2">Metas</a></li>
+   <li><a href="#menu3">Notícias</a></li>
+   <li><a href="#menu3">Sobre</a></li>
+ </ul>
+</nav>
+</header>
   <!--CAPA-->
   <figure id="capa" class="centro">
     <div class="imagem_fundo">
@@ -28,12 +43,12 @@
   </figure>
   <!--OBJETIVOS-->
   <section id="menu1" class="cor_fundo">
+    <hr>
+    <h1 class="centro" >Objetivos</h1>    
     <div class="coluna dois">
       <iframe width="853" height="480" src="https://www.youtube.com/embed/btqNI941Fc4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="coluna dois">
-      <h1 class="centro" >Objetivos</h1>
-      <hr>
       <p class="justificado">
          Esta Agenda é um plano de ação para as pessoas, para o planeta e para a prosperidade. 
          Ela também busca fortalecer a paz universal com mais liberdade. 
@@ -63,41 +78,41 @@
   </section>
   <!--METAS-->
   <section id="menu2">
-    <h1>Metas</h1>
     <hr>
+    <h1>Metas</h1>
     <div class="coluna quatro">
       <div class="icone">
         <img src="img/meta1.png" alt="Meta 1"/>
       </div>
-      <h1 class="centro">Meta 1</h1>
+      <h2 class="centro">Meta 1</h2>
       <p class="centro">Até 2030, acabar com a fome e garantir o acesso de todas as pessoas, em particular os pobres e pessoas em situações vulneráveis, incluindo crianças, a alimentos seguros, nutritivos e suficientes durante todo o ano.</p>
     </div>   
     <div class="coluna quatro">
       <div class="icone">
         <img src="img/meta2.png" alt="Meta 2"/>
       </div>
-      <h1 class="centro">Meta 2</h1>
+      <h2 class="centro">Meta 2</h2>
       <p class="centro">Até 2030, acabar com todas as formas de desnutrição, incluindo atingir, até 2025, as metas acordadas internacionalmente sobre nanismo e caquexia em crianças menores de cinco anos de idade, e atender às necessidades nutricionais dos adolescentes, mulheres grávidas e lactantes e pessoas idosas.</p>
     </div>
     <div class="coluna quatro">
       <div class="icone">
         <img src="img/meta3.png" alt="Meta 3"/>
       </div>
-      <h1 class="centro">Meta 3</h1>
+      <h2 class="centro">Meta 3</h2>
       <p class="centro">Até 2030, dobrar a produtividade agrícola e a renda dos pequenos produtores de alimentos, particularmente das mulheres, povos indígenas, agricultores familiares, pastores e pescadores, inclusive por meio de acesso seguro e igual à terra, outros recursos produtivos e insumos, conhecimento, serviços financeiros, mercados e oportunidades de agregação de valor e de emprego não agrícola.</p>
     </div>
     <div class="coluna quatro">
       <div class="icone">
         <img src="img/meta4.png" alt="Meta 4"/>
       </div>
-      <h1 class="centro">Meta 4</h1>
+      <h2 class="centro">Meta 4</h2>
       <p class="centro"> Até 2030, garantir sistemas sustentáveis de produção de alimentos e implementar práticas agrícolas resilientes, que aumentem a produtividade e a produção, que ajudem a manter os ecossistemas, que fortaleçam a capacidade de adaptação às mudanças climáticas, às condições meteorológicas extremas, secas, inundações e outros desastres, e que melhorem progressivamente a qualidade da terra e do solo.</p>
     </div>
   </section>
   <!--NOTICIAS-->
   <section id="menu3" class="cor_fundo">
-    <h1>Notícias</h1>
     <hr>
+    <h1>Notícias</h1>
     <h2>Veja as últimas notícias sobre ODS</h2>
     <div class="coluna tres fundo">
       <a class="link2" href="https://nacoesunidas.org/onu-recebe-ate-3-8-inscricoes-para-evento-virtual-sobre-impulso-aos-objetivos-globais/" target="_blank">
@@ -120,8 +135,9 @@
   </section>
   <!--SOBRE-->
   <section id="menu4" class="cor_fundo">
+    <hr>
+    <h1 class="centro" >Sobre mim</h1>
     <div class="coluna dois">
-      <h1 class="centro" >Sobre mim</h1>
       <p class="justificado">Meu nome é Luiz Lombardi</p>
       <p class="justificado">Aluno da E.M.P.G. Theodomiro Dias, na Vila Sônia em São Paulo - SP.</p> 
       <p class="justificado">Moro em Goiânia - GO e escolhi a ODS 2 - Fome Zero, 
